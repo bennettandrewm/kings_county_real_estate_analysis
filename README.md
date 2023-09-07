@@ -7,9 +7,7 @@
 Kings County - A beautiful place to live!
 
 ## 1. Project Overview
-A Seattle real estate brokerage wants to expand their services to developers. They're offering "state of the art" linear regression data analysis to new developers in the area on where and what to build, as it relates to price. They want to partner with you to serve as their in-house data engineer to build, operate, and interface with the model.
-
-This analysis would include, at a minimum, a linear regression model to examine the relationship between square footage and zip code on price - the target variable. They'd also like to see how other factors affect the price, if at all.
+A Seattle real estate brokerage wants to expand their services to developers. They're offering "state of the art" linear regression data analysis to new developers in the area on where and what to build, as it relates to price. This repository includes, at a minimum, a multi-variable linear regression model to examine the relationship between square footage and zip code on sales price - the target variable. They're are also additional property factors included in the analysis.
 
 
 ### The Data
@@ -30,11 +28,9 @@ A complete description of all the variables can be found in `column_names.md` in
 
 #### Data Modeling Approach
 
-In order to aid real estate developers in their quest to know what and where to build, the first step is to focus on the size and location of the home. Anecodotally, we know that builders and buyers often think about homes in terms of price per square foot, a simple linear expression. We also know that this increases or decreases by neighborhood, but can still be thought of in a price per sqaure foot relationship. A linear regression model is then appropriate for the analysis we're providing.
+In order to aid real estate developers in their quest to know what and where to build, the first step is to focus on the size and location of the home. Anecodotally, we know that builders and buyers often think about homes in terms of price per square foot, a simple linear expression. We also know that this increases or decreases by neighborhood. A linear regression model incorporating both of these factors is appropriate for the analysis we're providing.
 
-We will achieve this with our linear regression models using an iterative approach going from simple, single variable models to more complex. The sales price would be our target, or depedent variable. 
-
-Our first model includes just the square footage as our independent variable. Once the model is complete, we do another model to include the zipcode. From there, we quantify the impact of other features (bedrooms, baths, or condition) on the price.
+We will achieve this with our linear regression models using an iterative approach. We will start with a simple, single variable model and build more complexity with additional variables. The sales price would be our target, or depedent variable. From there, we quantify the impact of other features (bedrooms, baths, or condition) on the price.
 
 ### Github Repository
 
