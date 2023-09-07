@@ -177,7 +177,7 @@ To examine bedrooms and bathrooms, let's first look isolate bedrooms and bedroom
 
 We can see here that the median home has 3 beds and 2.5 baths, which is interesting. Let's look at the overall relationship between bedrooms and bathrooms and sales price.
 
-![bed_bath_price](Images/bed_vs_bath_price.png)
+![bed_bath_price](Images/bed_bath_price.png)
 
 Interesting. It looks like there isn't a linear relationship. In fact, the price seems to peak around 5 bedrooms and 4.5 baths. After this, the price either drops or flattens out. This doesn't look like a great candidate for a linear relationship but something to note - building more than 5 bedrooms or 4.5 baths may not result in a price increase.
 
