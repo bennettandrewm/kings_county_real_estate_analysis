@@ -1,7 +1,7 @@
 # Kings County Real Estate Analysis
 
 
-![kings_county_skyline](https://github.com/bennettandrewm/kings_county_real_estate_analysis/tree/master/Images/kings_county_skyline.png)
+![kings_county_skyline](Images/kings_county_skyline.png)
 
 
 Kings County - A beautiful place to live!
