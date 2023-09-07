@@ -40,7 +40,7 @@ Our first model includes just the square footage as our independent variable. On
 
 To execute this project, a github repository is utilized for public viewing and collaboration
 
-![git_hub_repository](Images/git_hub_repository.png)
+![github_repository](Images/github_repository.png)
 
 You can see the following files stored in the github repository.
 
@@ -230,7 +230,7 @@ Now that we have this amazing model, we're going to perform some error testing t
 ### Collinearity
 To examine collinearity, we're going to look at a seagram heatmap of a correlation matrix between a number of the additional features we looked at.
 
-![heat map](Images/heat_map.png)
+![heatmap](Images/heatmap.png)
 
 From here we can see the majority of our features show very little correlation. The two areas that do show it are `view_EXCELLENT` correlates slightly with `waterfront`. This makes sense because it's intuitive that if you live on the water, chances are you have an excellent view. So, based on that logic, I will remove the `waterfront` variable to avoid this.
 
