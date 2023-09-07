@@ -40,7 +40,7 @@ Our first model includes just the square footage as our independent variable. On
 
 To execute this project, a github repository is utilized for public viewing and collaboration
 
-![awesome](https://https://github.com/bennettandrewm/kings_county_real_estate_analysis/tree/master/Images/git_hub_repository.png)
+![git_hub_repository](Images/git_hub_repository.png)
 
 You can see the following files stored in the github repository.
 
@@ -132,7 +132,7 @@ So, first we're going to create a model using the Ordinary Linear Squares (OLS) 
 #### Results
 When we do this, we get a model that explains variance of 39.3% of the variance, but with high confidence that are coefficients are accurate. We get $447/ sq. ft. + $115,000. When we plot this line as a best_fit against all of the listings on a graph of `price` vs `sqft_living` we get the following graph
 
-![sqft_vs_price](https://https://github.com/bennettandrewm/kings_county_real_estate_analysis/tree/master/Images/sqft_vs_price.png)
+![sqft_vs_price](Images/sqft_vs_price.png)
 
 What we see here is interesting. Homes sell for almost $500/sq. ft. So a 2,000 sq. ft home sales for nearly 1M USD. A 4,000 sq.ft. home sales for nearly 2M USD. At a minimum, there seems to be a $115,000 premium for having a home in Kings County.
 
@@ -151,7 +151,7 @@ According to the model, houses are selling at approximately $374/sq. ft. with a 
 
 But once you factor in the zipcodes, they do have an impact on price. In fact, our model shows noticeable impact on price. To illustrate this point we've graphed two high impact zipcodes.
 
-![sqft_zipcode_vs_price](https://github.com/bennettandrewm/kings_county_real_estate_analysis/tree/master/Images/sqft_zipcode_vs_price.png)
+![sqft_zipcode_vs_price](Images/sqft_zipcode_vs_price.png)
 
 You can see that there is a significant difference between zip codes. 98004 homes are approximately 1.3M more than a typical zip code (in this case 98070). Zip code 98023 homes are approximately 445k less than the homes in 98070. We've also seen the price per square foot decrease. As we include the neigborhood, we see other things effect price. This makes sense
 
@@ -161,7 +161,7 @@ Now that we have a model that achieves what we set out to do. We're going to loo
 #### Closing Date
 Realtors tell us there is a "season", usually in the spring, that's the best time to list a home. Let's see if that data plays out and if theres a linear relationship. When we plot the closing month vs the sales price, this is what we get.
 
-![month_vs_price](https://github.com/bennettandrewm/kings_county_real_estate_analysis/tree/master/Images/month_vs_price.png)
+![month_vs_price](Images/month_vs_price.png)
 
 So, the realtors are on to something... prices peak in the spring, when the sales close in April and May. This is not a linear relationship but fairly compelling data - nearly 200K difference between April and January. We can't include it as linear but I will include it categorically.
 
@@ -173,11 +173,11 @@ To determine if other numerical variables should be added, the variables were pl
 #### Bedrooms & Bathrooms - Not Considered in Model
 To examine bedrooms and bathrooms, let's first look isolate bedrooms and bedrooms and their effect on price. We will do that with two charts. First, let's look at a few stats for the number of bedrooms and bathrooms built.
 
-![bed_bath_describe](https://github.com/bennettandrewm/kings_county_real_estate_analysis/tree/master/Images/bed_bath_describe.png)
+![bed_bath_describe](Images/bed_bath_describe.png)
 
 We can see here that the median home has 3 beds and 2.5 baths, which is interesting. Let's look at the overall relationship between bedrooms and bathrooms and sales price.
 
-![bed_bath_price](https://github.com/bennettandrewm/kings_county_real_estate_analysis/tree/master/Images/bed_vs_bath_price.png)
+![bed_bath_price](Images/bed_vs_bath_price.png)
 
 Interesting. It looks like there isn't a linear relationship. In fact, the price seems to peak around 5 bedrooms and 4.5 baths. After this, the price either drops or flattens out. This doesn't look like a great candidate for a linear relationship but something to note - building more than 5 bedrooms or 4.5 baths may not result in a price increase.
 
@@ -230,7 +230,7 @@ Now that we have this amazing model, we're going to perform some error testing t
 ### Collinearity
 To examine collinearity, we're going to look at a seagram heatmap of a correlation matrix between a number of the additional features we looked at.
 
-![heat map](https://github.com/bennettandrewm/kings_county_real_estate_analysis/tree/master/Images/heat_map.png)
+![heat map](Images/heat_map.png)
 
 From here we can see the majority of our features show very little correlation. The two areas that do show it are `view_EXCELLENT` correlates slightly with `waterfront`. This makes sense because it's intuitive that if you live on the water, chances are you have an excellent view. So, based on that logic, I will remove the `waterfront` variable to avoid this.
 
