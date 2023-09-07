@@ -41,26 +41,26 @@ To execute this project, a github repository is utilized for public viewing and 
 
 You can see the following files stored in the github repository.
 
-*PDFs* - Folder containing pdf files below 
-            * `Kings County Real Estate Presentation` - Non-technical presentation of the Analysis
-            * `Kings County Real Estate Analysis` - complete Jupyter Python Notebook in pdf form
-            * `README` - README file converted to PDF
+* *PDFs* - Folder containing pdf files below 
+    * `Kings County Real Estate Presentation` - Non-technical presentation of the Analysis
+    * `Kings County Real Estate Analysis` - complete Jupyter Python Notebook in pdf form
+    * `README` - README file converted to PDF
             
-*Images* - Folder containing the image files used in the Notebook, Presentation, and README file 
+* *Images* - Folder containing the image files used in the Notebook, Presentation, and README file 
 
-*data* - Folder containg the source data files
-            * `kc_house_data.csv` - Kings County Housing Data Set
-            * `column_names.md` - file explaining the column names  
+* *data* - Folder containg the source data files
+    * `kc_house_data.csv` - Kings County Housing Data Set
+    * `column_names.md` - file explaining the column names  
 
-*Contributing.md* - Folder containg instruction for how to contribute to Learn.co
+* *Contributing.md* - Folder containg instruction for how to contribute to Learn.co
 
-*README.md* - the currently file you're reading with descriptions about the coding file
+* *README.md* - the currently file you're reading with descriptions about the coding file
 
-*canvas.txt* - a Canvas text file
+* *canvas.txt* - a Canvas text file
 
-*gitignore.txt* - git ignore file 
+* *gitignore.txt* - git ignore file 
 
-*kings_county_real_estate_analysis.ipynb* - Notebook with Python analysis
+* *kings_county_real_estate_analysis.ipynb* - Notebook with Python analysis
 
 ## 2. Data Import, Cleaning, and Engineering
 
