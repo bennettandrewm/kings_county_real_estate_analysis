@@ -259,9 +259,11 @@ This was analyzed previously. We believe that only those variable with a linear 
 
 Homoscedasticity is the observation that the magnitude of the errors (or residuals) is the same no matter what the input, or independent variable is. The most effective way to observe this is by plotting the residuals against the predicted values. Homoscedasticity will result in a straight line around the max residuals. Heteroscedasticity will result in a curved line around the max residuals.
 
-The plot below shows are
+The plot below shows our residuals vs the predicted. 
 
+![homoscedasticity](Images/homoscedasticity.png)
 
+We do not see great homoscedasticity. This would improve possibly if we removed some outliers. Let's do an additional test to
 
 ## Results Discussion
 
