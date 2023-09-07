@@ -76,8 +76,8 @@ Of the 30,155 entries, there were 44 entries with NUll values in any of the colu
 #### Small Square Footages (removed 1 entry)
 Of the now 30,111 entries, we have 1 entry where `sqft_living` is less than 100 sq. ft. According to the listing, it's a 4 bed, 4 bath house of 3 sq.ft. house. This isn't right. We can delete that.
 
-#### Samll Lot Square Footages (removed 0 entries)
-We inspected homes with `sqft_lot`less than 500 sq. ft. It turns out there are quite a few homes on small lots but many are multistory. These entries look real. They could be small row houses, condos, or something multi-story not requiring large lots. We'll leave these entries.
+#### Small Lot Square Footages (removed 0 entries)
+We inspected homes with `sqft_lot` less than 500 sq. ft. It turns out there are quite a few homes on small lots but many are multistory. These entries look real. They could be small row houses, condos, or something multi-story not requiring large lots. We'll leave these entries.
 
 #### Small Above Square Footages (removed 0 entries)
 We inspected homes with `sqft_above` less than 300 sq. ft. There are 4 entries and and they look okay. Probably a small studio apartment or something. We removed none.
