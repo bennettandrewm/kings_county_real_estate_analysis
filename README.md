@@ -32,6 +32,7 @@ In order to aid real estate developers in their quest to know what and where to 
 
 We will achieve this with our linear regression models using an iterative approach. We will start with a simple, single variable model and build more complexity with additional variables. The sales price would be our target, or depedent variable. From there, we quantify the impact of other features (bedrooms, baths, or condition) on the price.
 
+
 ### Github Repository
 
 To execute this project, a github repository is utilized for public viewing and collaboration
@@ -261,5 +262,58 @@ The plot below shows our residuals vs the predicted.
 
 We do not see great homoscedasticity. This would improve possibly if we removed some outliers. Let's do an additional test to
 
+### Goldfeld-Qaundt
+The Goldfeld_Qaundy test is a way to reject the fact that are data is Homoscedastic. If we can reject this, than we know for sure it is Heteroscedastic. When we run it, we see our p-value is 0.08 greater than 0.05. This means we are not able to reject the null hypothesis which states our error terms are homoscedastic.
+
+This further validates the assumption of homoscedasticity of our residuals. Even though it ain't the prettiest thing.
+
+So... we're comfortable with the model, let's discuss the results.
+
 ## Results Discussion
+
+We discussed previously how, in general, Kings County had on a price of 447/sq.ft County wide.
+
+After we accounted for zipcode, we saw quite a shift depending on where our home was located.
+
+### Error and Accuracy
+Our model has the following has an error of approximately $212,000
+
+Our Adjusted R-Square is now showing a value of 72.4% of all variance accounted for. This is better, but one wonders if 4% increase when accounting for all of these models is really worth it. But... anyways.
+
+### Statistical Significance
+Using the standard alpha of 0.05 to evaluate statistical significance:
+
+Coefficients for sqft_living and most of our zipcodes are statistically significant. Our baseline zipcode is 98070. It seems that relative to our baseline, the zipcodes do have a statistically significant effect on price, except for zipcodes 98014, 98019, 98045, 98050, 98056, 98059, 98065, 98118, 98126, 98133, 98155, 98224). So...
+
+### Impacts
+According to the model, houses are selling at approximately $357/sq. ft, which is less than our original estimate, which showed homes selling at approximately $447,000. This means that as we factored other variables, that effect of square footage diminished.
+
+![final_sqft_price](Images/final_sqft_price.png)
+
+We can see here, that home would have to be about 2500 sq. ft. to sell for the same amount that a 2,000 sq.ft. home would have to in our previous analyis. Why? Because now that we account for other factors (zipcode, additional features) the value of square footage has gone down.
+
+The coefficients for the intercept is 112,000. That means that, when not accounting for square footage or zipcode, you could assume a house will sell for 112,000.
+
+Additionally, zipcodes have a large impact.
+
+The zipcodes with the largest effect are 98004, 98005, 98033, 98039, and 98040. Zipcode 98010, 98001, 98003, 98023, and 98092 have the most negative effect on pricing.
+
+### Additional Feature Impacts
+
+There are additional features with price impact as follows.
+
+![features](Images/features.png)
+
+An excellent view can really boost a property value, and poor or fair condition can hurt it, but both of these factors are less than the zipcode impact (remember, $1.3M boost).
+
+
+## Recommendations
+We were able to create a model that account for a model with reasonabale accuracy. 
+
+We confirmed that sqaure footage and zip code are the two largest factors when pricing a home.
+
+A linear regression model built iteratively was able to account for 72% of the variance in the housing price, with an average error of approximately $212,000.
+
+Real estate developers should build houses that can accomodate an everage number of bedrooms and bathrooms in desirable neighborhoods, and no more.
+
 
