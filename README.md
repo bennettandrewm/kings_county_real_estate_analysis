@@ -37,8 +37,6 @@ We will achieve this with our linear regression models using an iterative approa
 
 To execute this project, a github repository is utilized for public viewing and collaboration
 
-![github_repository](Images/github_repository.png)
-
 You can see the following files stored in the github repository.
 
 * *PDFs* - Folder containing pdf files below 
