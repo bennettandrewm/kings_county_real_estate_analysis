@@ -1,13 +1,13 @@
 # Kings County Real Estate Analysis
 
 <p align="center">
-<img src="Images/kings_county_skyline.png" width="400" height="400" />
+<img src="Images/kings_county_skyline.png" />
 </p>
 
 Kings County - A beautiful place to live!
 
 ## Project Overview
-A Seattle real estate brokerage wants to expand their services to developers. They're offering "state of the art" linear regression data analysis to new developers in the area on where and what to build, as it relates to price. having accurate price forecasting is valuable to developers to know what and where to build. This repository includes a multi-variable linear regression model to examine the relationship between square footage and zip code on sales price - the target variable. The model factors square footage, zip code, bathrooms, bedrooms, and additional features. It predicts home values, accounting for 72% of the variance in price (Rsquared).
+A Seattle real estate brokerage wants to expand their services to developers by offering "state of the art" linear regression price prediction model model. This model directs shows the price effects of the size, location, and various property features on residential, single family unitys. Having accurate price forecasting is valuable to developers who need to know what and where to build. The model and related files, contained in this repository, include a multi-variable linear regression model to examine the relationship between the features and accounts for 72% of the variance in price. In other words, the model can predict the price of a home within ~$200k (RMSE) by considering approximately 25 property features. 
 
 ## Table of Contents TOC
 [Business Case](#business-case)<br />
@@ -17,10 +17,10 @@ A Seattle real estate brokerage wants to expand their services to developers. Th
 [Evaluation](#evaluation)<br />
 [Key Findings](#key-findings)<br />
 [Summary](#summary)<br />
-[Github Repository](#github-repository)<br />'
+[Github Repository](#github-repository)<br />
 
 ## Business Case
-Since 2010, there have been 105,207 new units built in the Seattle city limits, represented a 34% increase. This has kept pace with the 189,040 additional people, or 31% increase during the same period. Despite this, Kings County continues to have a strong real estate market, with increasing need for house. But real estate developers need to know where and what to build well in advance of breaking ground. A price prediction model would help. Accounting for not only square footage and zip code, developers would like information on bedrooms and bathrooms, views, and other property features.  
+Since 2010, there have been 105,207 new units built in the Seattle city limits, represented a 34% increase, according to . This has kept pace with the 189,040 additional people, or 31% increase during the same period. Despite this, Kings County continues to have a strong real estate market, with increasing need for house. But real estate developers need to know where and what to build well in advance of breaking ground. A price prediction model would help. Accounting for not only square footage and zip code, developers would like information on bedrooms and bathrooms, views, and other property features.  
 <br />[return to TOC](#table-of-contents-TOC)
 
 ## Data Understanding
