@@ -7,7 +7,7 @@
 Kings County - A beautiful place to live!
 
 ## Project Overview
-A Seattle real estate brokerage wants to expand their services to developers by offering a price prediction model. This model shows the effects that various property features, such as size, location, bedrooms, bathrooms, etc. have on residential, single family home sale prices. Having accurate price forecasting is valuable to developers who need to know what and where to build. The model contains a multi-variable linear regression model to examine that accounts for 72% of the variance in price. In other words, the model can predict the price of a home within ~$200k (RMSE) by considering approximately 25 property features. 
+A Seattle real estate brokerage wants to expand their services to developers by offering a price prediction model, contained here in this repository. Having accurate price forecasting is valuable to developers who need to know where and what to build. Extracted from the publically available [King County House Sales](data/kc_house_data.csv) dataset, this model shows the effects that various property features, such as size, location, bedrooms, bathrooms, etc. have on residential, single family home sale prices.  It utilizes a multi-variable linear regression model that accounts for 72% of the variance in price. In other words, the model can predict the price of a home within ~$200k (RMSE) by considering approximately 25 property features. 
 
 ## Table of Contents TOC
 [Business Case](#business-case)<br />
